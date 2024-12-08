@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 function NavbarComponent() {
   return (
     <div>
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar expand="lg">
         <Container>
           <Navbar.Brand href="#home" className="d-flex align-items-center">
             <img
@@ -17,14 +17,22 @@ function NavbarComponent() {
               className="me-2" // Memberi margin di sebelah kanan logo
             />
           </Navbar.Brand>
-          Hasea
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto">
               {navLinks.map((link) => {
                 return (
-                  <div key={link.id}>
-                    <NavLink to={link.path}>{link.text}</NavLink>
+                  <div className="nav-link" key={link.id}>
+                    <NavLink
+                      to={link.path}
+                      className={({ isActive }) =>
+                        isActive
+                          ? "text-decoration-none"
+                          : "text-dark text-decoration-none"
+                      }
+                    >
+                      {link.text}
+                    </NavLink>
                   </div>
                 );
               })}

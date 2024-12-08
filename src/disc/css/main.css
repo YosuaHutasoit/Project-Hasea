@@ -1,3 +1,30 @@
 * {
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
+
+/* styling Navbar */
+
+.navbar {
+  position: relative;
+  width: 100%;
+}
+
+.navbar .nav-link a {
+  padding: 5px 10px 5px 10px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.navbar .nav-link a:hover {
+  color: #FF001A;
+}
+
+
+/* styling HomePage */
+
+header{
+    background-color: white
+}
+
+/* styling HomePage */
+/* styling HomePage */

@@ -21,7 +21,7 @@ export const navLinks = [
   {
     id: 2,
     path: "aboutus",
-    text: "aboutus",
+    text: "About Us",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ export const navLinks = [
   {
     id: 4,
     path: "contactme",
-    text: "Contactme",
+    text: "Contact Me",
   }
 ];
 
