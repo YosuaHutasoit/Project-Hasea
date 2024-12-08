@@ -1,7 +1,7 @@
 import {Routes, Route} from "react-router-dom"
 
 import NavbarComponent from "./components/NavbarComponent"
-import FooterComponent from "./components/FooterComponent"
+// import FooterComponent from "./components/FooterComponent"
 
 import LandingPage from "./pages/LandingPage";
 import AboutUs from "./pages/AboutUs"
@@ -20,7 +20,7 @@ function App() {
         <Route path="/DetailProduct" element={<DetailProduct />} />
       </Routes>
 
-    <FooterComponent/>
+    {/* <FooterComponent/> */}
     </div>
   );
 }

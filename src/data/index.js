@@ -21,7 +21,7 @@ export const navLinks = [
   {
     id: 2,
     path: "aboutus",
-    text: "boutus",
+    text: "aboutus",
   },
   {
     id: 3,

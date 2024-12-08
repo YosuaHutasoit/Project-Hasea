@@ -1,7 +1,7 @@
 function LandingPage() {
   return (
     <div>
-      Landing Page
+      Home
     </div>
   )
 }
