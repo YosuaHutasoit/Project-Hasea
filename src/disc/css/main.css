@@ -1,3 +1,80 @@
 * {
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
+
+/* styling Navbar */
+
+.navbar {
+  position: fixed;
+  padding: 10px 0 10px 0;
+  width: 100%;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  z-index: 9999;
+}
+
+.navbar.color-active {
+  background-color: whitesmoke;
+  padding: 20px 0 20px 0;
+}
+
+.navbar .nav-link a {
+  padding: 5px 10px 5px 10px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .nav-link a:hover {
+  color: #ff001a;
+}
+
+.btn-penawaran {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  background-color: transparent;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-penawaran:hover {
+  background-color: red;
+  color: white;
+}
+
+/* styling HomePage */
+header {
+  background-color: white;
+}
+
+.homepage header {
+  background-image: url('/path/to/your/image.jpg'); /* Ganti dengan path gambar Anda */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.homepage .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Efek overlay gelap */
+  z-index: 1;
+}
+
+.homepage .container {
+  z-index: 2;
+
+}
+
+/* styling HomePage */
+/* styling HomePage */

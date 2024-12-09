@@ -20,18 +20,8 @@ export const navLinks = [
   },
   {
     id: 2,
-    path: "aboutus",
-    text: "About Us",
-  },
-  {
-    id: 3,
-    path: "products",
-    text: "Products",
-  },
-  {
-    id: 4,
-    path: "contactme",
-    text: "Contact Me",
+    path: "detailproduct",
+    text: "Detail Product",
   }
 ];
 
