@@ -3,10 +3,13 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 
 import { navLinks } from "../data/index";
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const NavbarComponent = () => {
 
   const [changeColor, setChangeColor] = useState(false);
+
+  let navigate = useNavigate(); 
 
   const changeBackgroundColor = () => {
     if (window.scrollY > 10) {
@@ -25,7 +28,9 @@ const NavbarComponent = () => {
     <div>
       <Navbar expand="lg" className= {changeColor ? "color-active" : "" }>
         <Container>
-          <Navbar.Brand href="#home" className="d-flex align-items-center">
+          <Navbar.Brand onClick={() => navigate("/")}
+           className="d-flex align-items-center"
+           style={{ cursor: "pointer" }}>
             <img
               src="/Hasea.png"
               alt="Logo"

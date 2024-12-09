@@ -16,10 +16,10 @@ function App() {
    
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/AboutUs" element={<AboutUs />} />
-        <Route path="/Products" element={<Products />} />
-        <Route path="/ContactMe" element={<ContactMe />} />
-        <Route path="/DetailProduct" element={<DetailProduct />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/contactme" element={<ContactMe />} />
+        <Route path="/detailproduct" element={<DetailProduct />} />
       </Routes>
 
     {/* <FooterComponent/> */}
