@@ -1,0 +1,9 @@
+function NavbarComponentAboutUs() {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default NavbarComponentAboutUs
