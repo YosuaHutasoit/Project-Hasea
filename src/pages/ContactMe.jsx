@@ -1,7 +1,7 @@
-function ContactMe() {
+const ContactMe = () => {
   return (
     <div>
-      Contact Me
+      
     </div>
   )
 }

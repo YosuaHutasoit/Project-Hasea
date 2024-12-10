@@ -1,9 +1,0 @@
-function NavbarComponentDetailProduct() {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default NavbarComponentDetailProduct

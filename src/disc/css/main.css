@@ -6,7 +6,7 @@
 
 .navbar {
   position: fixed;
-  padding: 15px 0 15px 0;
+  padding: 10px 0 10px 0;
   width: 100%;
   transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
@@ -18,8 +18,23 @@
   background-color: #FFFF;
 }
 
+.nav-link {
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px; 
+}
+
+.nav-link:hover {
+  color: #ff001a;
+  background-color: #ffff;
+  border-radius: 5px;
+}
+
 .navbar.color-active {
-  background-color: whitesmoke;
+  background-color: #FFFF;
   padding: 20px 0 20px 0;
 }
 
@@ -50,6 +65,10 @@
   background-color: red;
   color: white;
 }
+
+/* styling Navbar */
+
+
 
 /* styling HomePage */
 header {

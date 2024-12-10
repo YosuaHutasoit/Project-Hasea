@@ -1,7 +1,7 @@
-function DetailProduct() {
+const DetailProduct = () => {
   return (
     <div>
-      DetailProduct
+      
     </div>
   )
 }
