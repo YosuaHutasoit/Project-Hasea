@@ -12,7 +12,7 @@ const LandingPage = () => {
   return (
   <div>
     <div className="homepage">
-      {/* <header className="hero-section" style={{ backgroundImage: `url(${HeroBanner})` }}>
+      <header className="hero-section" style={{ backgroundImage: `url(${HeroBanner})` }}>
         <div className="overlay">
           <Container className="text-light hero-content">
             <Row className="align-items-center">
@@ -25,7 +25,7 @@ const LandingPage = () => {
             </Row>
           </Container>
         </div>
-      </header> */}
+      </header>
       </div>
     <div className="about-us">
       {/* <div className="kelas w-100 min-vh-100">
@@ -46,7 +46,7 @@ const LandingPage = () => {
     <div className="products">
       <div className="kelas w-100 min-vh-100"></div>
     </div>
-    <div className="contacme">
+    <div className="contactme">
       <div className="kelas w-100 min-vh-100"></div>
     </div>
   </div>
