@@ -35,7 +35,7 @@ export const navLinks = [
   }
 ];
 
-// export const semuaKelas = [
+// export const Products = [
 //   {
 //     id: 1,
 //     image: KelasImage1,

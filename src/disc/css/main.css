@@ -3,7 +3,6 @@
 }
 
 /* styling Navbar */
-
 .navbar {
   position: fixed;
   padding: 10px 0 10px 0;
@@ -15,7 +14,7 @@
   -o-transition: all 0.2s ease;
   z-index: 9999;
   top: 0;
-  background-color: #FFFF;
+  background-color: #ffff;
 }
 
 .nav-link {
@@ -24,7 +23,7 @@
   color: #333;
   text-decoration: none;
   font-weight: bold;
-  margin: 0 10px; 
+  margin: 0 10px;
 }
 
 .nav-link:hover {
@@ -34,7 +33,7 @@
 }
 
 .navbar.color-active {
-  background-color: #FFFF;
+  background-color: #ffff;
   padding: 20px 0 20px 0;
 }
 
@@ -66,7 +65,45 @@
   color: white;
 }
 
-/* styling Navbar */
+/* styling Navbar1 */
+.custom-navbar {
+  position: relative;
+  padding: 10px;
+  background-color: #ffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-logo {
+  height: 50px;
+  width: auto;
+  margin-left: 70px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-right: 50px;
+}
+
+.custom-nav-link {
+  color: #000;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.custom-nav-text {
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+}
 
 
 
@@ -74,8 +111,6 @@
 header {
   background-color: white;
 }
-
-
 
 .hero-section {
   position: relative;
@@ -115,25 +150,22 @@ header {
   color: #fff;
 }
 
-/* Title Styling */
 .hero-title {
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #003EFA; /* Blue color for title */
+  color: #003efa; /* Blue color for title */
   margin-bottom: 1rem;
   text-align: center;
 }
 
-/* Subtitle Styling */
 .hero-subtitle {
   font-size: 1.25rem;
   color: #fff;
   margin-top: 0.5rem;
   text-align: center;
 }
-
 
 /* styling HomePage */
 /* styling HomePage */

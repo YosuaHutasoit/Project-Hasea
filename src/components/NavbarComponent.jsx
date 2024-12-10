@@ -76,7 +76,7 @@ const NavbarComponent = () => {
                 Products
               </Link>
               <Link
-                to="contact"
+                to="contactme"
                 spy={true}
                 smooth={true}
                 offset={-50}

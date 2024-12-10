@@ -7,7 +7,7 @@ import NavbarComponent1 from "./components/NavbarComponent1"
 import LandingPage from "./pages/LandingPage";
 import AboutUs from "./pages/AboutUs";
 import Products from "./pages/Products"
-import DetailProduct from "./pages/DetailProduct"
+import DetailProduct from "./pages/detailproducts/DetailProduct"
 import ContactMe from "./pages/ContactMe";
 
 function App() {
@@ -17,10 +17,8 @@ function App() {
   let Navbar;
   if (location.pathname === "/") {
     Navbar = <NavbarComponent />;
-  } else if (location.pathname === "/aboutus") {
+  } else if (location.pathname === "/aboutus" || location.pathname === "/products" || location.pathname === "/detailproduct" ) {
     Navbar = <NavbarComponent1 />;
-  } else if (location.pathname === "/products" || location.pathname === "/detailproduct") {
-    Navbar = <NavbarComponent2 />;
   } else {
     Navbar = null;
   }
