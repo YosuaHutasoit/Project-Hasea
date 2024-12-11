@@ -1,4 +1,4 @@
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, Breadcrumb } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const NavbarComponent1 = () => {
@@ -14,12 +14,12 @@ const NavbarComponent1 = () => {
             className="navbar-logo"
           />
         </Navbar.Brand>
-        <Nav className="navbar-right">
-          <Nav.Link href="/" className="custom-nav-link">
-            Home
-          </Nav.Link>
-          <span className="custom-nav-text">About Us</span>
-        </Nav>
+        
+          <Breadcrumb>
+            <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+            <Breadcrumb.Item active>About Us</Breadcrumb.Item>
+          </Breadcrumb>
+        
       </div>
     </Navbar>
   );

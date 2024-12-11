@@ -28,6 +28,7 @@ const LandingPage = () => {
       </header>
       </div>
     <div className="about-us">
+    
       {/* <div className="kelas w-100 min-vh-100">
         <Container>
           <Row>
