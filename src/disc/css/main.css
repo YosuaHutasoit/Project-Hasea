@@ -125,7 +125,7 @@
   
 }
 
-/* styling HomePage */
+/* styling Home Hero Banner */
 header {
   background-color: white;
 }
@@ -185,5 +185,9 @@ header {
   text-align: center;
 }
 
-/* styling HomePage */
+/* styling Home About Us*/
+.about-us {
+  margin-top: 80px; /* Mengatur margin-top */
+}
+
 /* styling HomePage */
