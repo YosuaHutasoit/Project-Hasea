@@ -49,20 +49,34 @@
 }
 
 .btn-penawaran {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
   color: black;
   background-color: transparent;
-  border: 2px solid red;
-  border-radius: 10px;
+  border: 2px solid #ff001a;
+  border-radius: 100px;
   padding: 10px 20px;
   cursor: pointer;
   transition: all 0.3s ease;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
 }
 
 .btn-penawaran:hover {
   background-color: red;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .text-center {
+    margin-top: 5px; /* Add margin-top on smaller screens */
+  }
+
+  .btn-penawaran {
+    margin-top: 5px; /* Adjust the margin-top for the Penawaran button */
+  }
 }
 
 /* styling Navbar1 */
@@ -187,7 +201,7 @@ header {
 
 /* styling Home About Us*/
 .about-us {
-  margin-top: 80px; /* Mengatur margin-top */
+  margin-top: 50px; /* Mengatur margin-top */
 }
 
 /* styling HomePage */
