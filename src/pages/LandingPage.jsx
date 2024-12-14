@@ -1,16 +1,19 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom";
+
 import HeroBanner from "../assets/img/landingpage/Hero-Banner.png";
 import HeroBanner1 from "../assets/img/landingpage/Hero-Banner1.png";
 import SNI from "../assets/img/SNI.png";
 import KAN from "../assets/img/KAN.png";
 import ISO from "../assets/img/ISO.png/";
 
+
 // import {} from '../data/index'
 
 const LandingPage = () => {
   return (
-    <div>
-      
+    <section>
       {/* Hero Banner */}
       <div className="homepage">
         <header
@@ -81,7 +84,104 @@ const LandingPage = () => {
 
       {/* List Products */}
       <div className="products">
-        <div className="kelas w-100 min-vh-100"></div>
+        <div className="kelas w-100 min-vh-100">
+          <Container className="my-5">
+            {/* Title */}
+            <Row className="mb-4">
+              <Col className="text-left">
+                <p
+                  style={{
+                    fontSize: "15px",
+                    fontWeight: "bold",
+                    color: "#007bff",
+                    textTransform: "uppercase",
+                    fontFamily: "Arial, sans-serif",
+                  }}
+                >
+                  KATALOG PRODUK
+                </p>
+                <p
+                  style={{
+                    fontSize: "60px",
+                    fontWeight: "bold",
+                    color: "#003EFA",
+                    textTransform: "uppercase",
+                    fontFamily: "Arial, sans-serif",
+                  }}
+                >
+                  Produk Unggulan
+                </p>
+              </Col>
+            </Row>
+
+            {/* Swiper Slider */}
+            <Swiper
+              spaceBetween={10}
+              slidesPerView={1}
+              navigation
+              loop
+              breakpoints={{
+                576: {
+                  slidesPerView: 2,
+                },
+                768: {
+                  slidesPerView: 3,
+                },
+              }}
+            >
+              <SwiperSlide>
+                <div className="text-center">
+                  <img
+                    src={HeroBanner}
+                    alt="Steel Grating"
+                    className="img-fluid"
+                    style={{
+                      borderRadius: "12px",
+                      boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+                    }}
+                  />
+                  <p>STEEL GRATING</p>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="text-center">
+                  <img
+                    src={HeroBanner}
+                    alt="Plat Besi"
+                    className="img-fluid"
+                    style={{
+                      borderRadius: "12px",
+                      boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+                    }}
+                  />
+                  <p>PLAT BESI</p>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="text-center">
+                  <img
+                    src={HeroBanner}
+                    alt="Plat Besi"
+                    className="img-fluid"
+                    style={{
+                      borderRadius: "12px",
+                      boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+                    }}
+                  />
+                  <p>PLAT BESI</p>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+
+            <div className="text-center mt-4">
+              <Link to="/products">
+                <Button variant="primary">More →</Button>
+              </Link>
+            </div>
+          </Container>
+        </div>
       </div>
 
       {/* Sertifikasi */}
@@ -92,7 +192,7 @@ const LandingPage = () => {
         <Container>
           <h2
             className="display-5 mb-5"
-            style={{ color: "#007bff", fontWeight: "bold" }}
+            style={{ color: "#003EFA", fontWeight: "bold" }}
           >
             SERTIFIKASI
           </h2>
@@ -142,8 +242,7 @@ const LandingPage = () => {
       <div className="send-message">
         <div className="kelas w-100 min-vh-100"></div>
       </div>
-
-    </div>
+    </section>
   );
 };
 
