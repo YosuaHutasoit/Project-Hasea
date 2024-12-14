@@ -1,5 +1,7 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+
 import { Link } from "react-router-dom";
 
 import HeroBanner from "../assets/img/landingpage/Hero-Banner.png";
@@ -7,7 +9,7 @@ import HeroBanner1 from "../assets/img/landingpage/Hero-Banner1.png";
 import SNI from "../assets/img/SNI.png";
 import KAN from "../assets/img/KAN.png";
 import ISO from "../assets/img/ISO.png/";
-
+import 'swiper/swiper-bundle.css';
 
 // import {} from '../data/index'
 
@@ -37,7 +39,8 @@ const LandingPage = () => {
       </div>
 
       {/* Hero Section */}
-      <div className="about-us w-100 min-vh-100">
+      <div className="about-us">
+        <div>
         <Container className="overflow-hidden">
           <Row className="gy-3 gy-lg-0 align-items-lg-center justify-content-lg-between">
             <Col xs={12} lg={5} className="text-center">
@@ -80,14 +83,15 @@ const LandingPage = () => {
             </Col>
           </Row>
         </Container>
+        </div>
       </div>
 
       {/* List Products */}
       <div className="products">
-        <div className="kelas w-100 min-vh-100">
-          <Container className="my-5">
+        <div className="">
+          <Container className="my-1">
             {/* Title */}
-            <Row className="mb-4">
+            <Row className="mb-3">
               <Col className="text-left">
                 <p
                   style={{
@@ -136,11 +140,11 @@ const LandingPage = () => {
                     alt="Steel Grating"
                     className="img-fluid"
                     style={{
-                      borderRadius: "12px",
+                      borderRadius: "30px",
                       boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
                     }}
                   />
-                  <p>STEEL GRATING</p>
+                  <p style={{ marginTop: "10px" }}>STEEL GRATING</p>
                 </div>
               </SwiperSlide>
 
@@ -151,11 +155,11 @@ const LandingPage = () => {
                     alt="Plat Besi"
                     className="img-fluid"
                     style={{
-                      borderRadius: "12px",
+                      borderRadius: "30px",
                       boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
                     }}
                   />
-                  <p>PLAT BESI</p>
+                  <p style={{ marginTop: "10px" }}>PLAT BESI</p>
                 </div>
               </SwiperSlide>
 
@@ -166,11 +170,26 @@ const LandingPage = () => {
                     alt="Plat Besi"
                     className="img-fluid"
                     style={{
-                      borderRadius: "12px",
+                      borderRadius: "30px",
                       boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
                     }}
                   />
-                  <p>PLAT BESI</p>
+                  <p style={{ marginTop: "10px" }}>PLAT BESI</p>
+                </div>
+              </SwiperSlide>
+              
+              <SwiperSlide>
+                <div className="text-center">
+                  <img
+                    src={HeroBanner}
+                    alt="Plat Besi"
+                    className="img-fluid"
+                    style={{
+                      borderRadius: "30px",
+                      boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+                    }}
+                  />
+                  <p style={{ marginTop: "10px" }}>PLAT BESI</p>
                 </div>
               </SwiperSlide>
             </Swiper>
